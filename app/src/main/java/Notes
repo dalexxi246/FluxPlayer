@@ -1,0 +1,16 @@
+FluxPlayer
+
+STATES:
+- Current playing song
+    - Init (Song previously played, if exists)
+    - Playing song.
+    - Song stopped.
+    - Song paused.
+    - Time updated.
+
+- Queue
+    - Init queue.
+    - Add song to queue.
+    - Remove song from queue.
+    - Change song position.
+    - Mark as favorite.
