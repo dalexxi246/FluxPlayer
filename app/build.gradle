@@ -21,6 +21,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    dataBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {
@@ -32,4 +36,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     compile 'io.reactivex.rxjava2:rxjava:2.1.6'
+    implementation "android.arch.lifecycle:extensions:1.0.0"
+    implementation "android.arch.lifecycle:reactivestreams:1.0.0"
+    compile "me.tatarka.redux:redux-core:0.10"
+    compile "me.tatarka.redux:redux-android:0.10"
+    compile "me.tatarka.redux:redux-android-lifecycle:0.10"
+    compile "me.tatarka.redux:redux-thunk:0.10"
+    compile "me.tatarka.redux:redux-rx2:0.10"
 }
