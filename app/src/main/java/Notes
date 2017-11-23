@@ -7,10 +7,15 @@ STATES:
     - Song stopped.
     - Song paused.
     - Time updated.
+    - Next Song.
+    - Preview Song.
 
 - Queue
     - Init queue.
+    - Play song.
     - Add song to queue.
     - Remove song from queue.
     - Change song position.
     - Mark as favorite.
+
+https://github.com/Yarikx/reductor

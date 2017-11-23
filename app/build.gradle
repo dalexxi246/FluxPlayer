@@ -38,9 +38,6 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxjava:2.1.6'
     implementation "android.arch.lifecycle:extensions:1.0.0"
     implementation "android.arch.lifecycle:reactivestreams:1.0.0"
-    compile "me.tatarka.redux:redux-core:0.10"
-    compile "me.tatarka.redux:redux-android:0.10"
-    compile "me.tatarka.redux:redux-android-lifecycle:0.10"
-    compile "me.tatarka.redux:redux-thunk:0.10"
-    compile "me.tatarka.redux:redux-rx2:0.10"
+    implementation 'com.yheriatovych:reductor:0.14.0'
+    annotationProcessor 'com.yheriatovych:reductor-processor:0.14.0'
 }

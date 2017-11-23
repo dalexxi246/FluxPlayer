@@ -5,10 +5,15 @@ data class Song(
         val name : String,
         val artist : String,
         val currentTime : Long,
-        val favorite : Boolean) : Comparable<Song> {
+        val favorite : Boolean,
+        val state : SongState) : Comparable<Song> {
 
     override fun compareTo(other: Song) : Int {
         return this.id - other.id
     }
 
+}
+
+enum class SongState {
+    PLAYING, PAUSED, STOPPED
 }

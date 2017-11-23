@@ -1,12 +1,13 @@
 package com.wh2.foss.fluxplayer;
 
-import com.wh2.foss.fluxplayer.model.Queue;
+import com.wh2.foss.fluxplayer.model.AppState;
 
-import me.tatarka.redux.SimpleStore;
+public class MainStore {
 
-public class MainStore extends SimpleStore<Queue> {
+    private final AppState appState;
 
     public MainStore() {
-        super(Queue.Companion.initialState());
+        appState = AppState.Companion.initialState();
     }
+
 }
